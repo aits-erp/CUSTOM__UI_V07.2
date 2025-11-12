@@ -579,19 +579,19 @@ dashboardContainer.innerHTML = `
           .c-teal { background: #16a085; }
         </style>
         <div class="nova-grid" id="main-grid" nova-animate-in>
-          <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Outstanding%20Of%20Distributor%20Over%2060%20Days')">
+          <div class="nova-card" onclick="frappe.set_route('/app/dashboard-view/Outstanding%20Of%20Distributor%20Over%2060%20Days')">
         <div class="nova-icon c-yellow"><img src="/assets/custom_ui/images/D2.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Total Outstanding Amount Of Distributors Group 60</div>
     </div>
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Product%20Ageing%20over%20180%20Days')">
+    <div class="nova-card" onclick="frappe.set_route('app/query-report/Product%20Ageing%20over%20180Days?item_group=Kraft+Box&item_type=Finished+Goods')">
         <div class="nova-icon c-orange"><img src="/assets/custom_ui/images/time.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Product Ageing over 180 Days</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Outstanding%20Of%20Debtors%20Monthwise')">
         <div class="nova-icon c-blue"><img src="/assets/custom_ui/images/debt.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Outstanding Debtors Monthwise</div>
     </div>
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Top%2050%20selling%20items')">
+    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Top%2050%20Most%20Selling%20Item')">
         <div class="nova-icon c-green"><img src="/assets/custom_ui/images/economy.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Top 50 selling items</div>
     </div>
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Bottom%2050%20Selling%20Item')">
+    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Bottom%2050%20selling%20item')">
         <div class="nova-icon c-red"><img src="/assets/custom_ui/images/bottom-selling.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Bottom 50 selling items</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Top%2050%20selling%20item%20which%20are%20out%20of%20stock')">
