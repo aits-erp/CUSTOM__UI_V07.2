@@ -144,47 +144,48 @@
         </style>
 
         <div class="nova-grid" id="main-grid" nova-animate-in>
-          <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Total%20Outstanding%20Amount%20Of%20Distributors%20Group%2060')">
-        <div class="nova-icon c-yellow"><img src="/assets/custom_ui_v6/images/D2.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Total Outstanding Amount Of Distributors Group 60</div>
+	<div class="nova-card" onclick="frappe.set_route('/app/dashboard-view/Outstanding%20Of%20Distributor%20Over%2060%20Days')">
+        <div class="nova-icon c-yellow"><img src="/assets/custom_ui/images/D2.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Total Outstanding Amount Of Distributors Group 60</div>
     </div>
-    
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Product%20Ageing%20over%20180%20Days')">
-        <div class="nova-icon c-orange"><img src="/assets/custom_ui_v6/images/time.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Product Ageing over 180 Days</div>
+    <div class="nova-card" onclick="frappe.set_route('app/query-report/Product%20Ageing%20over%20180Days?item_group=Kraft+Box&item_type=Finished+Goods')">
+        <div class="nova-icon c-orange"><img src="/assets/custom_ui/images/time.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Product Ageing over 180 Days</div>
     </div>
-    
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard/Outstanding%20Debtors%20Monthwise')">
-        <div class="nova-icon c-blue"><img src="/assets/custom_ui_v6/images/debt.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Outstanding Debtors Monthwise</div>
+    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Outstanding%20Of%20Debtors%20Monthwise')">
+        <div class="nova-icon c-blue"><img src="/assets/custom_ui/images/debt.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Outstanding Debtors Monthwise</div>
     </div>
-
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Top%2050%20selling%20items')">
-        <div class="nova-icon c-green"><img src="/assets/custom_ui_v6/images/economy.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Top 50\xA0selling\xA0items</div>
+    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Top%2050%20Most%20Selling%20Item')">
+        <div class="nova-icon c-green"><img src="/assets/custom_ui/images/economy.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Top 50 selling items</div>
     </div>
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Bottom%2050%20Selling%20Item')">
-        <div class="nova-icon c-red"><img src="/assets/custom_ui_v6/images/bottom-selling.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Bottom 50\xA0selling\xA0items</div>
+    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Bottom%2050%20selling%20item')">
+        <div class="nova-icon c-red"><img src="/assets/custom_ui/images/bottom-selling.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Bottom 50 selling items</div>
     </div>
+    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Top%2050%20selling%20item%20which%20are%20out%20of%20stock')">
+        <div class="nova-icon c-teal"><img src="/assets/custom_ui/images/out-of-stock.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Top 50 selling items out of stock</div>
+    </div>
+	
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Accounts')">
-        <div class="nova-icon c-brown"><img src="/assets/custom_ui_v6/images/creditor.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Accounts Dashboard</div>
+        <div class="nova-icon c-brown"><img src="/assets/custom_ui_v7/images/creditor.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Accounts Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Stock')">
-        <div class="nova-icon c-orange"><img src="/assets/custom_ui_v6/images/saleinvoice.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Stock Dashboard</div>
+        <div class="nova-icon c-orange"><img src="/assets/custom_ui_v7/images/saleinvoice.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Stock Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Selling')">
-        <div class="nova-icon c-pink"><img src="/assets/custom_ui_v6/images/selling-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Selling Dashboard</div>
+        <div class="nova-icon c-pink"><img src="/assets/custom_ui_v7/images/selling-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Selling Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Buying')">
-        <div class="nova-icon c-grey"><img src="/assets/custom_ui_v6/images/buying-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Buying Dashboard</div>
+        <div class="nova-icon c-grey"><img src="/assets/custom_ui_v7/images/buying-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Buying Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Manufacturing')">
-        <div class="nova-icon c-red"><img src="/assets/custom_ui_v6/images/manufacturing.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Manufacturing Dashboard</div>
+        <div class="nova-icon c-red"><img src="/assets/custom_ui_v7/images/manufacturing.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Manufacturing Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/CRM')">
-        <div class="nova-icon c-pink"><img src="/assets/custom_ui_v6/images/crm dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>CRM Dashboard</div>
+        <div class="nova-icon c-pink"><img src="/assets/custom_ui_v7/images/crm dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>CRM Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Project')">
-        <div class="nova-icon c-purple"><img src="/assets/custom_ui_v6/images/projects-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Project Dashboard</div>
+        <div class="nova-icon c-purple"><img src="/assets/custom_ui_v7/images/projects-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Project Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Asset')">
-        <div class="nova-icon c-yellow"><img src="/assets/custom_ui_v6/images/item.png" style="width:100px; height:100px; object-fit: contain;" /></div><div>Assets Dashboard</div>
+        <div class="nova-icon c-yellow"><img src="/assets/custom_ui_v7/images/item.png" style="width:100px; height:100px; object-fit: contain;" /></div><div>Assets Dashboard</div>
     </div>
 
     </div>
@@ -239,7 +240,7 @@
 `;
       let dashboardVisible = true;
       const rightBtn = document.createElement("button");
-      rightBtn.innerHTML = "<img src='/assets/custom_ui_v6/images/apps-button.png' style='width:30px;height:35px;object-fit:contain;' />";
+      rightBtn.innerHTML = "<img src='/assets/custom_ui_v7/images/apps-button.png' style='width:30px;height:35px;object-fit:contain;' />";
       rightBtn.className = "dashboard-btn-global";
       rightBtn.style.position = "fixed";
       rightBtn.style.right = "10px";
