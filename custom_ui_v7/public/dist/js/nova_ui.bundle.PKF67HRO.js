@@ -159,8 +159,11 @@
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Bottom%20100%20most%20selling%20items')">
         <div class="nova-icon c-red"><img src="/assets/custom_ui_v7/images/bottom-selling.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Bottom 100 selling items</div>
     </div>
-    <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Top%2050%20selling%20item%20which%20are%20out%20of%20stock')">
-        <div class="nova-icon c-teal"><img src="/assets/custom_ui_v7/images/out-of-stock.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Top 50 selling items out of stock</div>
+    <div class="nova-card" onclick="frappe.set_route('app/query-report/Custom%20Most%20selling%20item%20report%20which%20are%20out%20of%20stock')">
+        <div class="nova-icon c-teal"><img src="/assets/custom_ui_v7/images/out-of-stock.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Most selling items which are out of stock</div>
+    </div>
+    <div class="nova-card" onclick="frappe.set_route('app/query-report/Custom%20Sales%20Analytic%20Report?tree_type=Customer&doc_type=Sales+Invoice&value_quantity=Value&from_date=2025-04-01&to_date=2026-03-31&company=Vinod+Cookware+India+Private+Limited&range=Monthly')">
+        <div class="nova-icon c-teal"><img src="/assets/custom_ui_v7/images/sales-analytics.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Sales Analytics Report</div>
     </div>
 	
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Accounts')">
