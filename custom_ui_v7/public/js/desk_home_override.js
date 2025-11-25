@@ -204,8 +204,8 @@
     <div class="nova-card" onclick="frappe.set_route('app/query-report/Custom%20Most%20selling%20item%20report%20which%20are%20out%20of%20stock')">
         <div class="nova-icon c-teal"><img src="/assets/custom_ui_v7/images/out-of-stock.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Most selling items which are out of stock</div>
     </div>
-    <div class="nova-card" onclick="frappe.set_route('app/query-report/Custom%20Sales%20Analytic%20Report?tree_type=Customer&doc_type=Sales+Invoice&value_quantity=Value&from_date=2025-04-01&to_date=2026-03-31&company=Vinod+Cookware+India+Private+Limited&range=Monthly')">
-        <div class="nova-icon c-teal"><img src="/assets/custom_ui_v7/images/sales-analytics.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Sales Analytics Report</div>
+    <div class="nova-card" onclick="frappe.set_route('app/query-report/Custom%20Sales%20Analytic%20Report')">
+        <div class="nova-icon c-grey"><img src="/assets/custom_ui_v7/images/sales-analytics.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Sales Analytics Report</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Accounts')">
         <div class="nova-icon c-brown"><img src="/assets/custom_ui_v7/images/creditor.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Accounts Dashboard</div>
@@ -217,7 +217,7 @@
         <div class="nova-icon c-pink"><img src="/assets/custom_ui_v7/images/selling-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Selling Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Buying')">
-        <div class="nova-icon c-grey"><img src="/assets/custom_ui_v7/images/buying-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Buying Dashboard</div>
+        <div class="nova-icon c-teal"><img src="/assets/custom_ui_v7/images/buying-dashboard.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Buying Dashboard</div>
     </div>
     <div class="nova-card" onclick="frappe.set_route('app/dashboard-view/Manufacturing')">
         <div class="nova-icon c-red"><img src="/assets/custom_ui_v7/images/manufacturing.png" style="width:60px; height:50px; object-fit: contain;" /></div><div>Manufacturing Dashboard</div>
@@ -741,11 +741,6 @@ if (window.frappe && frappe.router) {
     // Initial call
     createMiniNav();
 })();
-
-
-
-
-
 
 
 
