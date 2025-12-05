@@ -125,53 +125,49 @@
   animation: zoomOut 0.3s ease forwards;
 }
    #main-grid {
-      margin-inline: 100px;
-    }
+  margin-inline: 100px;
+}
 
-          .nova-grid {
-            padding: 15px;
-            display: grid;
-            top: 100%;
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-            gap: 15px;
-            justify-items: center;
-            color: black;
-            background-color: #f5e3b9ff;
-            border-radius: 10px;
-            margin: 20px;
-          }
-          .nova-card {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            cursor: pointer;
-          }
-          .nova-icon {
-            width: 80px;
-            height: 80px;
-            border-radius: 20%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 10px;
-            box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-            font-size: 28px;
-            color: white;
-            font-weight: bold;
-            background: gray;
-          }
-          .nova-icon:hover {
-            transform: scale(1.1);
-            transition: transform 0.2s;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.25);
-          }
-          .nova-icon img {
-            border-radius: 20%;
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-          }
+.nova-grid {
+  padding: 15px;
+  display: grid;
+  top: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  color: black;
+  background-color: #F7E7C5;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.nova-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  font-size: 28px;
+  color: white;
+  font-weight: bold;
+  background: gray;
+}
+
+.nova-icon:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+}
+
+.nova-icon img {
+  border-radius: 20%;
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
 
           .c-yellow { background: #f1c40f; }
           .c-green { background: #27ae60; }
@@ -239,46 +235,81 @@
       const EXTRA_STYLE = `
 <style id="nova-ui-custom-style">
 
-.minnav-btn { width: 150px; padding: 6px 12px; border: none; border-radius: 6px; cursor: pointer; background-color: rgb(255, 205, 79); color: #880000ff; font-size: 13px; font-weight: 500; transition: all 0.3s ease; }
-  
-  .minnav-btn:hover { background-color: rgb(255, 205, 79); transform: translateY(-2px); }
-  
-  .minnav-dropdown { position: absolute; background: #fff4dfff; top: 100%; left: 0; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); display: none; min-width: 200px; z-index: 999 !important;}
-  
-  .minnav-subitem { padding: 8px 12px; font-size: 13px; cursor: pointer; }
-  
-  .minnav-subitem:hover { background: rgb(255, 205, 79); color: rgba(119, 40, 0, 1); }
+.minnav-btn { 
+  width: 150px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #FFD77A;
+  color: #884400;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.minnav-btn:hover { 
+  background-color: #F8CA63;
+  transform: translateY(-2px);
+}
+
+.minnav-dropdown { 
+  position: absolute;
+  background: #FFF4DF;
+  top: 100%;
+  left: 0;
+  border: 1px solid #e0cda9;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
+  display: none; 
+  min-width: 200px; 
+  z-index: 999 !important;
+}
+
+.minnav-subitem { 
+  padding: 8px 12px; 
+  font-size: 13px; 
+  cursor: pointer; 
+}
+
+.minnav-subitem:hover { 
+  background: #FFD77A; 
+  color: #7A3A00; 
+}
 
 .dashboard-btn {
-    position: fixed;
-    right: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 10px 14px;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    background-color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    z-index: 9;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: background 0.3s ease, transform 0.2s ease;
-  }
-  .dashboard-btn:hover {
-    background-color: rgb(255, 205, 79);
-    transform: translateY(-50%) scale(1.1);
-  }
-  #sliding-dashboard {
-    position: absolute;
-    top: 20%;
-    left: 0; /* visible on load */
-    width: 100%;
-    height: 100%;
-    transition: left 0.5s ease;
-    z-index: 5;
-    overflow-y: auto;
-  }
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 14px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.dashboard-btn:hover {
+  background-color: #FFD77A;
+  transform: translateY(-50%) scale(1.1);
+}
+
+#sliding-dashboard {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: left 0.5s ease;
+  z-index: 5;
+  overflow-y: auto;
+  background-color: #FFF4E8;
+}
 </style>
 `;
 
@@ -739,6 +770,7 @@ if (window.frappe && frappe.router) {
     // Initial call
     createMiniNav();
 })();
+
 
 
 
